@@ -1,0 +1,25 @@
+input#\#cell {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px #ccc solid;
+    border-spacing: 0;
+}
+
+div#\#puzzle {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+table,
+td {
+    padding: 12px 12px 12px 12px;
+    border: 1px solid #333;
+}
+
+div#\#home-btn {
+    margin-top: 100px;
+}

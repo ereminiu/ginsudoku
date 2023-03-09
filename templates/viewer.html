@@ -1,0 +1,33 @@
+{{ define "viewer.tmpl" }}
+
+{{ template "header.tmpl" }}
+
+    <div id="#puzzle">
+        <table>
+            {{ range $i, $row := .grid }}
+                <tr>
+                {{ range $j, $col := $row }}
+                    {{ if not $col }}
+                        <td> </td>
+                    {{ else }}
+                        <td> {{ $col }} </td>
+                    {{ end }}
+                {{ end }}
+                </tr>
+            {{ end }}
+        </table>
+    </div>
+
+    <div id="#home-btn">
+        <li> <a href="/"> Home </a> </li>
+    </div>
+
+    {{ if .flag }}
+        <div id="#sol-btn">
+            <li> <a href="/getsol"> Show Solution </a> </li>
+        </div>
+    {{ end }}
+
+{{ template "footer.tmpl" }}
+
+{{ end }}
