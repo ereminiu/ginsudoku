@@ -1,6 +1,8 @@
 {{ define "grid.tmpl"}}
 {{ template "header.tmpl" }}
 
+<p> <strong> Enter your puzzle grid </strong> </p>
+
 <form role="from" method="POST" action="/sendgrid">
     <div id="#puzzle">
         <input type="number" name="cell_00" id="#cell" min="0" max="9">

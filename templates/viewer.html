@@ -1,5 +1,11 @@
 {{ define "viewer.tmpl" }}
 
+{{ if .flag }}
+    <p> <strong> Grid generated successful </strong> </p>
+{{ else }}
+    <p> <strong> Here is Solution! </strong> </p>
+{{ end }}
+
 {{ template "header.tmpl" }}
 
     <div id="#puzzle">
