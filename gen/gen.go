@@ -73,8 +73,8 @@ func (g *Generator) swapBoxV() {
 
 func (g *Generator) shuffle() {
 	g.transpose()
-	for it := 0; it < 40; it++ {
-		for rep := 0; rep < 4; rep++ {
+	for it := 0; it < 20; it++ {
+		for rep := 0; rep < 10; rep++ {
 			idx := randint(4)
 			switch idx {
 
