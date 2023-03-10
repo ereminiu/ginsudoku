@@ -7,8 +7,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var val string
-
 func main() {
 	r := gin.Default()
 
