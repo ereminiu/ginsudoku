@@ -20,5 +20,5 @@ func main() {
 	r.POST("/sendgrid", handlers.ReadHandler)
 
 	log.Println("Server started at port :8080")
-	r.Run(":8080")
+	r.Run(":1337")
 }
