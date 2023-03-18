@@ -2,8 +2,6 @@
 Sudoku web application.
 
 Features:
-1) Solve the given sudoku
-2) Generate random puzzle and solve him
 
 1) Solve the given puzzle 
 
