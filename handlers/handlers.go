@@ -46,10 +46,7 @@ func GenGridHandler(c *gin.Context) {
 }
 
 func HomeHandler(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.tmpl", gin.H{
-		"name": "valera",
-		"arr":  []int{1, 2, 3},
-	})
+	c.HTML(http.StatusOK, "index.tmpl", nil)
 }
 
 func EnterGridHandler(c *gin.Context) {
